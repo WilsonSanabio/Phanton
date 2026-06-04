@@ -14,7 +14,7 @@ O Phanton automatiza o fluxo de coleta e tabulação em Markdown das seguintes f
 Para clonar o repositório e configurar todas as dependências automaticamente, rode os comandos abaixo no terminal:
 
 ```bash
-git clone [https://github.com/WilsonSanabio/Phanton.git](https://github.com/WilsonSanabio/Phanton.git)
+git clone https://github.com/WilsonSanabio/Phanton.git
 cd Phanton
 sudo ./setup.sh
 
