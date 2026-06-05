@@ -88,15 +88,15 @@ fi
 
 # 4. Criando a árvore de diretórios padrão caso não exista
 echo -e "\n${CIANO}[📁] Estruturando os diretórios locais do projeto...${RESET}"
-mkdir -p Documentos wordlists
+mkdir -p ../Documentos ../wordlists
 
-# 5. Ajuste Inteligente de Permissões e Governança de Arquivos (Evita o PermissionError)
+# 5. Ajuste Inteligente de Permissões e Governança de Arquivos
 echo -e "\n${CIANO}[🛡️] Aplicando o protocolo Sana/Bios de governança de permissões...${RESET}"
 
 if [ "$USUARIO_REAL" != "root" ]; then
     echo -e "${AMARELO}[*] Sincronizando propriedade do projeto para o operador: ${USUARIO_REAL}...${RESET}"
-    chown -R "$USUARIO_REAL":"$USUARIO_REAL" .
-    chmod -R 755 .
+    chown -R "$USUARIO_REAL":"$USUARIO_REAL" ..
+    chmod -R 755 ..
     
     # Garante que a pasta go do usuário também tenha as permissões certas
     if [ -d "/home/$USUARIO_REAL/go" ]; then
@@ -104,7 +104,7 @@ if [ "$USUARIO_REAL" != "root" ]; then
     fi
     echo -e "${VERDE}[✓] Árvore de diretórios blindada e liberada com sucesso!${RESET}"
 else
-    chmod -R 755 .
+    chmod -R 755 ..
 fi
 
 #==============================================================================
