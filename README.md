@@ -16,6 +16,7 @@ Para clonar o repositório e configurar todas as dependências automaticamente, 
 ```bash
 git clone https://github.com/WilsonSanabio/Phanton.git
 cd Phanton
+chmod +x setup.sh
 sudo ./setup.sh
 
 ```
