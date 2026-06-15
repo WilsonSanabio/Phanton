@@ -23,12 +23,9 @@ sudo ./Setup/setup.sh
 
 ## 🎯 Como Usar
 
-Após a instalação, basta executar o script principal passando o domínio alvo:
+Após a instalação, você pode digitar apenas 'phanton' em qualquer terminal aberto
 
-```bash
-python3 Phanton.py
-
-```
+phanton
 
 ---
 
